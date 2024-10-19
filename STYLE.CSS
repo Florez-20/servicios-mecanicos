@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header{ 
+    background-color: rgb(20, 235, 247);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.menu{
+    padding: 1px;
+}
+.card{
+    width: 90%;
+    margin: 10px 10px 10px 10px;
+    padding: 4px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.imagen{
+    background-color: #1551a1;
+}
+h2{
+    color: white;
+    padding: 5px;
+}
+.imgser:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+p{
+    text-align: justify;
+    margin:8px;
+}
+input{
+    padding: 10px;
+    background-color: #1551a1;
+    margin: 15px 0px 5px 0px;
+    color:white;
+    border-radius: 4px;
+}
+input:hover{
+    background-color: #18365e;
+    cursor: pointer;
+}
+
+.imglogo{
+    width: 200px;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+main{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+footer{
+    background-color: blue;
+    height: 150px;
+}
+
+@media screen and (min-width:768px) {
+
+    header{ 
+        background-color: blue;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       align-items: center;
+       padding: 0PX 100PX;
+    
+    }    
+    .menu ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu ul li{
+        padding: 5px;
+        border-right: 1px solid white;
+    }
+
+    main{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .card{
+        width: 45%;
+        margin: 10px 10px;
+        padding: 4px;
+        overflow: hidden;
+        border: 1px solid black;
+    }
+}
+@media screen and (min-width:1200px) {
+
+    header{ 
+        background-color: blue;
+        height: 150px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+       align-items: center;
+       padding: 0PX 100PX;
+    
+    }    
+    .menu ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu ul li{
+        padding: 5px;
+        border-right: 1px solid white;
+    }
+
+    main{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    .card{
+        width: 30%;
+        margin: 10px 10px;
+        padding: 4px;
+        overflow: hidden;
+        border: 1px solid black;
+    }
+}
